@@ -1,0 +1,947 @@
+﻿﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>朋友</title>
+    <meta name="description" content="95后青年，后端开发者，略懂前端, 学生，实习，缺乏社会的毒打">
+    <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('朋友，上古浏览器不支持呢~');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="body-wrap">
+        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+            <div id="page_site-info">
+                <div id="site-title">
+                    <span class="blogtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed(".blogtitle", {
+                            strings: ['求知若饥，虚心若愚', 'Stay Hungry Stay Foolish'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 25,
+                            showCursor: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </nav>
+        <main id="content-outer">
+            <div class="layout_page" id="content-inner">
+                <div class="aside_content" id="aside_content">
+                    <div class="card-widget card-info">
+                        <div class="card-content">
+                            <div class="card-info-avatar is-center">
+                                <img class="avatar-img"
+                                    src="https://cdn.jsdelivr.net/gh/laoxuai/assert/images/20200125221102.png"
+                                    alt="avatar">
+                                <div class="author-info__name">玄学道长</div>
+                                <div class="author-info__description">00后青年，热爱学习。, <s>学生，理想</s>，妇贵险中求</div>
+                            </div>
+                            <div class="card-info-social-icons is-center">
+                                <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                <span>一言</span>
+                            </div>
+                            <div id="hitokoto"></div>
+                        </div>
+                    </div>
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span>今日诗词</span>
+                            </div>
+                            <div id="jinrishici-sentence"></div>
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-webinfo">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <span>站点信息</span>
+                            </div>
+                            <div class="webinfo">
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-uv-name">本站访客数 :</div>
+                                    <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
+                                </div>
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-name">本站总访问量 :</div>
+                                    <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article id="page">
+                    <div class="article-container">
+                        <h2>音乐</h2>
+                        <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574235.html">
+                        </meting-js>
+                        <hr>
+
+                        <h2>技能</h2>
+                        <div class="skillbox">
+
+                            <script type="text/javascript"
+                                src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+                            <script type="text/javascript"
+                                src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+                            <script type="text/javascript"
+                                src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+                            <script type="text/javascript"
+                                src="https://assets.pyecharts.org/assets/echarts-wordcloud.min.js"></script>
+                            <script type="text/javascript"
+                                src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+                            <div id="fe251751e7404770a6984ca91e366adf" class="chart-container"
+                                style="width:900px; height:500px;"></div>
+                            <script>
+                                var chart_fe251751e7404770a6984ca91e366adf = echarts.init(
+                                    document.getElementById('fe251751e7404770a6984ca91e366adf'), 'macarons', { renderer: 'canvas' });
+                                var option_fe251751e7404770a6984ca91e366adf = {
+                                    "animation": true,
+                                    "animationThreshold": 2000,
+                                    "animationDuration": 1000,
+                                    "animationEasing": "cubicOut",
+                                    "animationDelay": 0,
+                                    "animationDurationUpdate": 300,
+                                    "animationEasingUpdate": "cubicOut",
+                                    "animationDelayUpdate": 0,
+                                    "series": [
+                                        {
+                                            "type": "pie",
+                                            "clockwise": true,
+                                            "data": [
+                                                {
+                                                    "name": "\u5b9d\u9a6c",
+                                                    "value": 15
+                                                },
+                                                {
+                                                    "name": "\u6cd5\u62c9\u5229",
+                                                    "value": 1
+                                                },
+                                                {
+                                                    "name": "\u5954\u9a70",
+                                                    "value": 14
+                                                },
+                                                {
+                                                    "name": "\u5965\u8fea",
+                                                    "value": 2
+                                                },
+                                                {
+                                                    "name": "\u5927\u4f17",
+                                                    "value": 9
+                                                },
+                                                {
+                                                    "name": "\u4e30\u7530",
+                                                    "value": 19
+                                                },
+                                                {
+                                                    "name": "\u7279\u65af\u62c9",
+                                                    "value": 1
+                                                }
+                                            ],
+                                            "radius": [
+                                                "0%",
+                                                "75%"
+                                            ],
+                                            "center": [
+                                                "50%",
+                                                "50%"
+                                            ],
+                                            "label": {
+                                                "show": true,
+                                                "position": "top",
+                                                "margin": 8,
+                                                "formatter": "{b}: {c}"
+                                            },
+                                            "rippleEffect": {
+                                                "show": true,
+                                                "brushType": "stroke",
+                                                "scale": 2.5,
+                                                "period": 4
+                                            }
+                                        }
+                                    ],
+                                    "legend": [
+                                        {
+                                            "data": [
+                                                "\u5b9d\u9a6c",
+                                                "\u6cd5\u62c9\u5229",
+                                                "\u5954\u9a70",
+                                                "\u5965\u8fea",
+                                                "\u5927\u4f17",
+                                                "\u4e30\u7530",
+                                                "\u7279\u65af\u62c9"
+                                            ],
+                                            "selected": {},
+                                            "show": true,
+                                            "padding": 5,
+                                            "itemGap": 10,
+                                            "itemWidth": 25,
+                                            "itemHeight": 14
+                                        }
+                                    ],
+                                    "tooltip": {
+                                        "show": true,
+                                        "trigger": "item",
+                                        "triggerOn": "mousemove|click",
+                                        "axisPointer": {
+                                            "type": "line"
+                                        },
+                                        "showContent": true,
+                                        "alwaysShowContent": false,
+                                        "showDelay": 0,
+                                        "hideDelay": 100,
+                                        "textStyle": {
+                                            "fontSize": 14
+                                        },
+                                        "borderWidth": 0,
+                                        "padding": 5
+                                    },
+                                    "title": [
+                                        {
+                                            "text": "Pie-\u57fa\u672c\u793a\u4f8b",
+                                            "padding": 5,
+                                            "itemGap": 10
+                                        }
+                                    ]
+                                };
+                                chart_fe251751e7404770a6984ca91e366adf.setOption(option_fe251751e7404770a6984ca91e366adf);
+                            </script>
+                            <div id="a5332209586046889e31866862c362f1" class="chart-container"
+                                style="width:900px; height:500px;"></div>
+                            <script>
+                                var chart_a5332209586046889e31866862c362f1 = echarts.init(
+                                    document.getElementById('a5332209586046889e31866862c362f1'), 'white', { renderer: 'canvas' });
+                                var option_a5332209586046889e31866862c362f1 = {
+                                    "animation": true,
+                                    "animationThreshold": 2000,
+                                    "animationDuration": 1000,
+                                    "animationEasing": "cubicOut",
+                                    "animationDelay": 0,
+                                    "animationDurationUpdate": 300,
+                                    "animationEasingUpdate": "cubicOut",
+                                    "animationDelayUpdate": 0,
+                                    "color": [
+                                        "#c23531",
+                                        "#2f4554",
+                                        "#61a0a8",
+                                        "#d48265",
+                                        "#749f83",
+                                        "#ca8622",
+                                        "#bda29a",
+                                        "#6e7074",
+                                        "#546570",
+                                        "#c4ccd3",
+                                        "#f05b72",
+                                        "#ef5b9c",
+                                        "#f47920",
+                                        "#905a3d",
+                                        "#fab27b",
+                                        "#2a5caa",
+                                        "#444693",
+                                        "#726930",
+                                        "#b2d235",
+                                        "#6d8346",
+                                        "#ac6767",
+                                        "#1d953f",
+                                        "#6950a1",
+                                        "#918597"
+                                    ],
+                                    "series": [
+                                        {
+                                            "type": "wordCloud",
+                                            "shape": "diamond",
+                                            "rotationRange": [
+                                                0,
+                                                0
+                                            ],
+                                            "rotationStep": 45,
+                                            "girdSize": 20,
+                                            "sizeRange": [
+                                                20,
+                                                100
+                                            ],
+                                            "data": [
+                                                {
+                                                    "name": "\u5c31\u5fd8\u4e86\u5427 1K",
+                                                    "value": 6181,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(44,55,17)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u73ab\u7470\u7a83\u8d3c \u67f3\u723d",
+                                                    "value": 4386,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(8,148,117)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u7231\u4e2b\u7231\u4e2b (\u5973\u7248) \u65fa\u4ed4\u5c0f\u4e54",
+                                                    "value": 4055,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(11,96,1)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u6700\u7f8e\u7684\u77ac\u95f4 \u771f\u745e",
+                                                    "value": 2467,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(96,128,78)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u6700\u7f8e\u7684\u77ac\u95f4 \u771f\u745e",
+                                                    "value": 2244,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(38,138,21)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u5b64\u72ec\u9882\u6b4c \u9648\u6587\u975e",
+                                                    "value": 1868,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(7,99,35)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u7d2b (Live) \u90ed\u6c81",
+                                                    "value": 1484,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(78,20,128)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u7231\u4e0d\u5f97\u5fd8\u4e0d\u820d \u767d\u5c0f\u767d",
+                                                    "value": 1112,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(29,150,41)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u6469\u5929\u8f6e Youngior",
+                                                    "value": 865,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(10,156,44)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u8ffd\u5149\u65c5\u884c \u4e95\u8fea\u513f",
+                                                    "value": 847,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(71,10,74)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u52c7\u4e8e\u6000\u5ff5 cococola",
+                                                    "value": 582,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(54,112,138)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u6700\u8fdc\u7684\u4f60\u662f\u6211\u6700\u8fd1\u7684\u7231 \u534a\u5428\u5144\u5f1f",
+                                                    "value": 555,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(70,89,30)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u4e0d\u53d8\u7684\u5fc3\u613f \u7a7a\u57ce",
+                                                    "value": 550,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(129,58,2)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u5b64\u72ec\u672c\u8eab \u82cf\u73ae",
+                                                    "value": 462,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(0,115,85)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u6885\u96e8\u5fae\u9178 \u4f17\u91cc",
+                                                    "value": 366,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(24,0,98)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "Tomboy Destiny Rogers",
+                                                    "value": 360,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(24,138,49)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u9ea6\u6d6a yihuik\u82e1\u6167",
+                                                    "value": 282,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(6,64,157)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u8fd8\u6ca1\u6709\u7231\u591f \u738b\u99a8",
+                                                    "value": 273,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(90,138,146)"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "\u4eba\u95f4\u544a\u767d joysaaaa",
+                                                    "value": 265,
+                                                    "textStyle": {
+                                                        "normal": {
+                                                            "color": "rgb(142,64,103)"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "drawOutOfBound": false,
+                                            "textStyle": {
+                                                "emphasis": {}
+                                            }
+                                        }
+                                    ],
+                                    "legend": [
+                                        {
+                                            "data": [],
+                                            "selected": {},
+                                            "show": true,
+                                            "padding": 5,
+                                            "itemGap": 10,
+                                            "itemWidth": 25,
+                                            "itemHeight": 14
+                                        }
+                                    ],
+                                    "tooltip": {
+                                        "show": true,
+                                        "trigger": "item",
+                                        "triggerOn": "mousemove|click",
+                                        "axisPointer": {
+                                            "type": "line"
+                                        },
+                                        "showContent": true,
+                                        "alwaysShowContent": false,
+                                        "showDelay": 0,
+                                        "hideDelay": 100,
+                                        "textStyle": {
+                                            "fontSize": 14
+                                        },
+                                        "borderWidth": 0,
+                                        "padding": 5
+                                    },
+                                    "title": [
+                                        {
+                                            "text": "词云演示",
+                                            "padding": 5,
+                                            "itemGap": 10
+                                        }
+                                    ]
+                                };
+                                chart_a5332209586046889e31866862c362f1.setOption(option_a5332209586046889e31866862c362f1);
+                            </script>
+                            <div id="686822e22a1f405eab7c1ea7db6a68c7" class="chart-container"
+                                style="width:900px; height:500px;"></div>
+                            <script>
+                                var chart_686822e22a1f405eab7c1ea7db6a68c7 = echarts.init(
+                                    document.getElementById('686822e22a1f405eab7c1ea7db6a68c7'), 'macarons', { renderer: 'canvas' });
+                                var option_686822e22a1f405eab7c1ea7db6a68c7 = {
+                                    "animation": true,
+                                    "animationThreshold": 2000,
+                                    "animationDuration": 1000,
+                                    "animationEasing": "cubicOut",
+                                    "animationDelay": 0,
+                                    "animationDurationUpdate": 300,
+                                    "animationEasingUpdate": "cubicOut",
+                                    "animationDelayUpdate": 0,
+                                    "series": [
+                                        {
+                                            "type": "bar",
+                                            "name": "\u5546\u5bb6A",
+                                            "legendHoverLink": true,
+                                            "data": [
+                                                114,
+                                                55,
+                                                27,
+                                                101,
+                                                125,
+                                                27,
+                                                105
+                                            ],
+                                            "showBackground": false,
+                                            "barMinHeight": 0,
+                                            "barCategoryGap": "20%",
+                                            "barGap": "30%",
+                                            "large": false,
+                                            "largeThreshold": 400,
+                                            "seriesLayoutBy": "column",
+                                            "datasetIndex": 0,
+                                            "clip": true,
+                                            "zlevel": 0,
+                                            "z": 2,
+                                            "label": {
+                                                "show": true,
+                                                "position": "top",
+                                                "margin": 8
+                                            }
+                                        },
+                                        {
+                                            "type": "bar",
+                                            "name": "\u5546\u5bb6B",
+                                            "legendHoverLink": true,
+                                            "data": [
+                                                57,
+                                                55,
+                                                27,
+                                                101,
+                                                125,
+                                                27,
+                                                105
+                                            ],
+                                            "showBackground": false,
+                                            "barMinHeight": 0,
+                                            "barCategoryGap": "20%",
+                                            "barGap": "30%",
+                                            "large": false,
+                                            "largeThreshold": 400,
+                                            "seriesLayoutBy": "column",
+                                            "datasetIndex": 0,
+                                            "clip": true,
+                                            "zlevel": 0,
+                                            "z": 2,
+                                            "label": {
+                                                "show": true,
+                                                "position": "top",
+                                                "margin": 8
+                                            }
+                                        }
+                                    ],
+                                    "legend": [
+                                        {
+                                            "data": [
+                                                "\u5546\u5bb6A",
+                                                "\u5546\u5bb6B"
+                                            ],
+                                            "selected": {
+                                                "\u5546\u5bb6A": true,
+                                                "\u5546\u5bb6B": true
+                                            },
+                                            "show": true,
+                                            "padding": 5,
+                                            "itemGap": 10,
+                                            "itemWidth": 25,
+                                            "itemHeight": 14
+                                        }
+                                    ],
+                                    "tooltip": {
+                                        "show": true,
+                                        "trigger": "item",
+                                        "triggerOn": "mousemove|click",
+                                        "axisPointer": {
+                                            "type": "line"
+                                        },
+                                        "showContent": true,
+                                        "alwaysShowContent": false,
+                                        "showDelay": 0,
+                                        "hideDelay": 100,
+                                        "textStyle": {
+                                            "fontSize": 14
+                                        },
+                                        "borderWidth": 0,
+                                        "padding": 5
+                                    },
+                                    "xAxis": [
+                                        {
+                                            "show": true,
+                                            "scale": false,
+                                            "nameLocation": "end",
+                                            "nameGap": 15,
+                                            "gridIndex": 0,
+                                            "inverse": false,
+                                            "offset": 0,
+                                            "splitNumber": 5,
+                                            "minInterval": 0,
+                                            "splitLine": {
+                                                "show": false,
+                                                "lineStyle": {
+                                                    "show": true,
+                                                    "width": 1,
+                                                    "opacity": 1,
+                                                    "curveness": 0,
+                                                    "type": "solid"
+                                                }
+                                            },
+                                            "data": [
+                                                "\u886c\u886b",
+                                                "\u6bdb\u8863",
+                                                "\u9886\u5e26",
+                                                "\u88e4\u5b50",
+                                                "\u98ce\u8863",
+                                                "\u9ad8\u8ddf\u978b",
+                                                "\u889c\u5b50"
+                                            ]
+                                        }
+                                    ],
+                                    "yAxis": [
+                                        {
+                                            "show": true,
+                                            "scale": false,
+                                            "nameLocation": "end",
+                                            "nameGap": 15,
+                                            "gridIndex": 0,
+                                            "inverse": false,
+                                            "offset": 0,
+                                            "splitNumber": 5,
+                                            "minInterval": 0,
+                                            "splitLine": {
+                                                "show": false,
+                                                "lineStyle": {
+                                                    "show": true,
+                                                    "width": 1,
+                                                    "opacity": 1,
+                                                    "curveness": 0,
+                                                    "type": "solid"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "title": [
+                                        {
+                                            "text": "\u9500\u552e\u4e1a\u7ee9",
+                                            "padding": 5,
+                                            "itemGap": 10
+                                        }
+                                    ],
+                                    "toolbox": {
+                                        "show": true,
+                                        "orient": "horizontal",
+                                        "itemSize": 15,
+                                        "itemGap": 10,
+                                        "left": "80%",
+                                        "feature": {
+                                            "saveAsImage": {
+                                                "type": "png",
+                                                "backgroundColor": "auto",
+                                                "connectedBackgroundColor": "#fff",
+                                                "show": true,
+                                                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                                                "pixelRatio": 1
+                                            },
+                                            "restore": {
+                                                "show": true,
+                                                "title": "\u8fd8\u539f"
+                                            },
+                                            "dataView": {
+                                                "show": true,
+                                                "title": "\u6570\u636e\u89c6\u56fe",
+                                                "readOnly": false,
+                                                "lang": [
+                                                    "\u6570\u636e\u89c6\u56fe",
+                                                    "\u5173\u95ed",
+                                                    "\u5237\u65b0"
+                                                ],
+                                                "backgroundColor": "#fff",
+                                                "textareaColor": "#fff",
+                                                "textareaBorderColor": "#333",
+                                                "textColor": "#000",
+                                                "buttonColor": "#c23531",
+                                                "buttonTextColor": "#fff"
+                                            },
+                                            "dataZoom": {
+                                                "show": true,
+                                                "title": {
+                                                    "zoom": "\u533a\u57df\u7f29\u653e",
+                                                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                                                },
+                                                "icon": {},
+                                                "xAxisIndex": false,
+                                                "yAxisIndex": false,
+                                                "filterMode": "filter"
+                                            },
+                                            "magicType": {
+                                                "show": true,
+                                                "type": [
+                                                    "line",
+                                                    "bar",
+                                                    "stack",
+                                                    "tiled"
+                                                ],
+                                                "title": {
+                                                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                                                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                                                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                                                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                                                },
+                                                "icon": {}
+                                            },
+                                            "brush": {
+                                                "icon": {},
+                                                "title": {
+                                                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                                                    "polygon": "\u5708\u9009",
+                                                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                                                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                                                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                                                    "clear": "\u6e05\u9664\u9009\u62e9"
+                                                }
+                                            }
+                                        }
+                                    }
+                                };
+                                chart_686822e22a1f405eab7c1ea7db6a68c7.setOption(option_686822e22a1f405eab7c1ea7db6a68c7);
+                            </script>
+                        </div>
+
+                        <hr>
+                        <h2>名言言</h2>
+                        <div class="tool" style="text-align: center;font-size: 25px;">
+                            喜欢的东西在合理的范围内就去追求
+                        </div>
+
+                        <hr>
+                        <h2>收藏</h2>
+                        <div class="tool">
+                            <style>
+                                .thumbnail-container {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+                                    text-align: center;
+                                    font-size: 20px;
+                                    font-style: 楷体;
+                                }
+
+                                .thumbnail {
+                                    width: 150px;
+                                    height: 60px;
+                                    height: auto;
+                                    border: 1px solid #ccc;
+                                    padding: 5px;
+                                }
+
+                                .thumbnail:hover {
+                                    transform: scale(1.1);
+                                    /* 鼠标悬停时的缩放效果 */
+                                    box-shadow: 2px black;
+                                }
+                            </style>
+                            </head>
+
+                            <body>
+
+                                <div class="thumbnail-container">
+                                    <a href="https://github.com/">
+                                        <div class="thumbnail">
+                                            <img src="https://rs1.huanqiucdn.cn/dp/api/images/imageDir/ab3e71f8381702bbe939419d4bc22b5au5.jpg"
+                                                alt="Thumbnail 1">
+                                            <p>github</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.bilibili.com/" target="_blank">
+                                        <div class="thumbnail">
+                                            <img src="https://p3.ssl.qhimgs1.com/sdr/400__/t01cc6fc33caa31d1dd.png"
+                                                alt="Thumbnail 2">
+                                            <p>B站</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://leetcode-cn.com/problemset/all/" target="_blank">
+                                        <div class="thumbnail">
+                                            <img src="https://i2.hdslb.com/bfs/archive/fe3d2ff9c59f61cf5fb6d6fb11352058409ce0ae.jpg@480w_270h_1c"
+                                                alt="Thumbnail 3">
+                                            <p>Leetcode</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://api.aa1.cn/" target="_blank">
+                                        <div class="thumbnail">
+                                            <img src="https://preview.qiantucdn.com/freepik/free-vector/flat-design-api-infographic_23-2149380375.jpg!qt1000"
+                                                alt="Thumbnail 4" style="width: 150px;height: 75px;">
+                                            <p>Api</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.nowcoder.com/ta/coding-interviews" target="_blank">
+                                        <div class="thumbnail">
+                                            <img src="https://uploadfiles.nowcoder.com/files/20220114/805539847_1642128449973/offerbanner200_268.png"
+                                                alt="Thumbnail 5" style="width: 150px;height: 75px;">
+                                            <p>剑指offer</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://adzhp.cn/">
+                                        <div class="thumbnail">
+                                            <img src="https://adzhp.xyz/wp-content/uploads/2020/01/%E9%BB%98%E8%AE%A4%E6%A0%87%E9%A2%98_%E8%87%AA%E5%AE%9A%E4%B9%89px_2019.02.08-2.png"
+                                                alt="Thumbnail 6" style="width: 150px;height: 75px;">
+                                            <p>爱达杂货铺</p>
+                                        </div>
+                                    </a>
+                                    <!-- Add more thumbnail divs as needed -->
+                                </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="footer-wrap">
+                <div class="copyright">&copy;2019 - 2021 BY Bucaicai and updated by 玄学道长</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+    <!-- aplayer、meting -->
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    <!-- nplayer -->
+    <script src="https://unpkg.com/nplayer@latest/dist/index.min.js"></script>
+
+    <!--   一言、今日诗词   -->
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+    <!-- 看板娘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+    <!--鼠标点击效果-->
+    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+
+    <script type="text/javascript">
+        console.clear();
+        console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
+        console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/laoxuai");
+        console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
+
+
+        (function ($) {
+            $.fn.snow = function (options) {
+                var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
+                    documentHeight = $(document).height(),
+                    documentWidth = $(document).width(),
+                    defaults = {
+                        minSize: 10,
+                        maxSize: 20,
+                        newOn: 1000,
+                        flakeColor: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                    },
+                    options = $.extend({}, defaults, options);
+                var interval = setInterval(function () {
+                    var startPositionLeft = Math.random() * documentWidth - 100,
+                        startOpacity = 0.5 + Math.random(),
+                        sizeFlake = options.minSize + Math.random() * options.maxSize,
+                        endPositionTop = documentHeight - 200,
+                        endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                        durationFall = documentHeight * 10 + Math.random() * 5000;
+                    $flake.clone().appendTo('body').css({
+                        left: startPositionLeft,
+                        opacity: startOpacity,
+                        'font-size': sizeFlake,
+                        color: options.flakeColor
+                    }).animate({
+                        top: endPositionTop,
+                        left: endPositionLeft,
+                        opacity: 0.2
+                    }, durationFall, 'linear', function () {
+                        $(this).remove()
+                    });
+                }, options.newOn);
+            };
+        })(jQuery);
+        $(function () {
+            $.fn.snow({
+                minSize: 5, /* 定义雪花最小尺寸 */
+                maxSize: 50,/* 定义雪花最大尺寸 */
+                newOn: 800  /* 定义密集程度，数字越小越密集 */
+            });
+        });
+
+        // 浏览器搞笑标题
+        var OriginTitle = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                // $('[rel="icon"]').attr('href', "/funny.ico");
+                document.title = '页面崩溃啦 ~';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="icon"]').attr('href', "/favicon.ico");
+                document.title = '交个' + OriginTitle;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitle;
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+
+</html>
